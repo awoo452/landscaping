@@ -5,6 +5,7 @@
     <head>
         <title>Landscaping & Junk Removal</title>
         <link rel ="stylesheet" href="/css/style.css?v=1.1"> <!--My stylesheet-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
@@ -110,7 +111,37 @@
                     <h4>Please reach out to us at any time with questions!</h4>
                 </section>
                 <article id="contactUs">
-                    
+                    <form>
+                        <div class="formItem" id="name">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="formItem" id="number">
+                            <label for="number">Phone Number</label>
+                            <input type="text" name="number" id="number">
+                        </div>
+                        <div class="formItem" id="email">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="formItem" id="inquiryType">
+                            <label for="type">Category</label>
+                            <select name="type" id="type">
+                                <option value="default">-</option>
+                                <option value="sales">Sales Question</option>
+                                <option value="order">Order Status</option>
+                                <option value="general">Information Request</option>
+                                <option value="project">Project Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <label for="inquiry">How can we help?</label>
+                        <div class="formItem" id="inquiry">
+                            <textarea id="inquiry" name="inquiry" rows="3">Enter your message here!</textarea>
+                        </div>
+
+                        <button id="submit">SUBMIT!</button>
+                    </form>
                 </article>
             </div>
         </main>

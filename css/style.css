@@ -208,5 +208,45 @@ main #contactUs {
   background-position: center;
   background-size: 100%;
   background-repeat: repeat;
-  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main #contactUs form {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  padding: 1em;
+  margin: 1em;
+  background-size: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+main #contactUs form .formItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5em;
+}
+
+main #contactUs form #inquiry {
+  text-align: center;
+  flex-direction: column;
+}
+
+main #contactUs form button {
+  margin: auto;
+  margin-top: 1em;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+main #contactUs form button:hover {
+  cursor: pointer;
 }
