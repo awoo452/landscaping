@@ -78,10 +78,6 @@ main article {
 main article img {
   max-width: 75%;
   height: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 1em;
-  box-shadow: 2px 2px 4px black;
 }
 
 @media (min-width: 700px) {
@@ -135,6 +131,12 @@ main #landscaping {
   border-bottom: 2px solid black;
 }
 
+main #landscaping img {
+  border-radius: 10px;
+  margin: 1em;
+  box-shadow: 2px 2px 4px black;
+}
+
 main #junk {
   background: url("/img/metal.jpeg");
   background-position: center;
@@ -142,12 +144,63 @@ main #junk {
   background-repeat: repeat;
 }
 
+main #junk img {
+  border-radius: 10px;
+  margin: 1em;
+  box-shadow: 2px 2px 4px black;
+}
+
 main #testamonials {
   background: url("/img/sky.jpeg");
   background-position: center;
   background-size: 100%;
   background-repeat: repeat;
-  height: 50vh;
+}
+
+main #testamonials .testamonial {
+  width: 75%;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  margin: 1em;
+  padding: .5em;
+  box-shadow: 2px 2px 4px black;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: space-around;
+}
+
+main #testamonials .testamonial h1, main #testamonials .testamonial h2, main #testamonials .testamonial h3, main #testamonials .testamonial h4, main #testamonials .testamonial h5, main #testamonials .testamonial h6, main #testamonials .testamonial p, main #testamonials .testamonial a {
+  color: black;
+}
+
+main #testamonials .testamonial img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+main #testamonials .testamonial .testamonialText {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  align-self: center;
+}
+
+main #testamonials .testamonial .testamonialText h3 {
+  text-shadow: 1px 1px 2px gray;
+}
+
+main #testamonials .testamonial .testamonialPhotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 1100px) {
+  main #testamonials .testamonial {
+    width: 25%;
+  }
 }
 
 main #contactUs {
