@@ -198,8 +198,12 @@ main {
                     justify-content: space-between;
                     margin-top: .5em;
                 }
+                #inquiryLabel {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
                 #inquiry {
-                    text-align: center;
                     flex-direction: column;
                 }
                 button {
