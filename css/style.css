@@ -226,17 +226,6 @@ main #contactUs form {
   background-color: white;
 }
 
-main #contactUs form .formItem {
-  display: flex;
-  justify-content: space-between;
-  margin-top: .5em;
-}
-
-main #contactUs form #inquiry {
-  text-align: center;
-  flex-direction: column;
-}
-
 main #contactUs form button {
   margin: auto;
   margin-top: 1em;
@@ -249,4 +238,8 @@ main #contactUs form button {
 
 main #contactUs form button:hover {
   cursor: pointer;
+}
+
+main #contactUs form h3 {
+  color: black;
 }

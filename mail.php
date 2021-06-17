@@ -1,16 +1,14 @@
 <?php
 if(isset( $_POST['name']))
 $name = $_POST['name'];
-if(isset( $_POST['number']))
-$number = $_POST['number'];
 if(isset( $_POST['email']))
 $email = $_POST['email'];
-if(isset( $_POST['inquiryType']))
-$inquiryType = $_POST['inquiryType'];
-if(isset( $_POST['inquiry']))
-$inquiry = $_POST['inquiry'];
+if(isset( $_POST['message']))
+$message = $_POST['message'];
+if(isset( $_POST['subject']))
+$subject = $_POST['subject'];
 
-$content="From: $name \n Email: $email \n Type: $inquiryType \n Message: $inquiry";
+$content="From: $name \n Email: $email \n Message: $message";
 $recipient = "jaaronsservices@gmail.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
