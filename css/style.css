@@ -214,7 +214,7 @@ main #contactUs {
   align-items: center;
 }
 
-main #contactUs form {
+main #contactUs div {
   display: flex;
   flex-direction: column;
   width: 440px;
@@ -226,7 +226,7 @@ main #contactUs form {
   background-color: white;
 }
 
-main #contactUs form button {
+main #contactUs div button {
   margin: auto;
   margin-top: 1em;
   padding: 1em;
@@ -236,10 +236,10 @@ main #contactUs form button {
   border-radius: 5px;
 }
 
-main #contactUs form button:hover {
+main #contactUs div button:hover {
   cursor: pointer;
 }
 
-main #contactUs form h3 {
+main #contactUs div h3 {
   color: black;
 }
