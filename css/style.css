@@ -209,37 +209,11 @@ main #contactUs {
   background-size: 100%;
   background-repeat: repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-main #contactUs div {
-  display: flex;
-  flex-direction: column;
-  width: 440px;
+  width: 100%;
   padding: 1em;
-  margin: 1em;
-  background-size: 100%;
+}
+
+main #contactUs img {
   border: 1px solid black;
-  border-radius: 5px;
-  background-color: white;
-}
-
-main #contactUs div button {
-  margin: auto;
-  margin-top: 1em;
-  padding: 1em;
-  background-color: black;
-  color: white;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
-main #contactUs div button:hover {
-  cursor: pointer;
-}
-
-main #contactUs div h3 {
-  color: black;
+  box-shadow: 2px 2px 4px black;
 }
