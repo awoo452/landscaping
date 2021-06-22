@@ -1,3 +1,5 @@
+@import './variables';
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -14,7 +16,6 @@ nav {
     height: fit-content;
     padding-left: 1em;
     padding-right: 1em;
-    font-family: 'Baloo Tammudu 2', cursive;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -24,12 +25,15 @@ nav {
             display: flex;
             align-items: center;
             padding: .5em;
+            a {
+                text-decoration: none;
+                font-family: $nav_font_family;
+            }
         }
     }
     #logo {
         background: url("/img/logo.png");
-        background-position: center;
-        background-size: 100%;
+        @include background_image;
         background-repeat: no-repeat;
         justify-self: center;
         align-self: center;
@@ -47,12 +51,9 @@ main {
     h1, h2, h3, h4, h5, h6, p, a {
         color: rgb(238, 238, 238);
         text-align: center;
-        font-family: 'Baloo Tammudu 2', cursive;
+        font-family: $main_font_family;
         padding: 0;
-        margin-inline-start: 0;
-        margin-inline-end: 0;
-        margin-block-start: 0;
-        margin-block-end: 0;
+        @include margin_killer;
     }
     h2 {
         font-size: 2.5em;
@@ -85,7 +86,7 @@ main {
         padding: 1em;
         border-bottom: 3px solid white;
         h1 {
-            font-family: 'Courgette', cursive;
+            font-family: $main_font_family_2;
             font-size: 3em;
             text-shadow: 2px 2px #000000;
         }
@@ -93,55 +94,37 @@ main {
     #topHeader {
         border-top: 0;
     }
-    #getStarted {
+    #landing {
         background: url("/img/plant.jpeg");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: repeat;
-        display: flex;
-        flex-direction: column;
+        @include background_image;
         padding: 5em;
-        button {
-            width: fit-content;
-            align-self: center;
-            padding: 1em;
-        }
     }
     #landscaping {
-        background: url("/img/grass.jpeg");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: repeat;
+        background: $landscaping_bg;
+        @include background_image;
         border-bottom: 2px solid black;
         img {
-            border-radius: 10px;
             margin: 1em;
-            box-shadow: 2px 2px 4px black;
+            @include image_border;
         }
     }
     #junk {
-        background: url("/img/metal.jpeg");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: repeat;
+        background: $junk_bg;
+        @include background_image;
         img {
-            border-radius: 10px;
             margin: 1em;
-            box-shadow: 2px 2px 4px black;
+            @include image_border;
         }
     }
     #testamonials {
-        background: url("/img/sky.jpeg");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: repeat;
+        background: $testamonials_bg;
+        @include background_image;
         .testamonial {
             width: 75%;
             background-color: rgb(238, 238, 238);
-            border-radius: 10px;
             margin: 1em;
             padding: .5em;
-            box-shadow: 2px 2px 4px black;
+            @include image_border;
             display: flex;
             justify-content: space-around;
             align-content: space-around;
@@ -154,10 +137,7 @@ main {
                 max-height: 100px;
             }
         .testamonialText {
-            margin-block-start: 0;
-            margin-block-end: 0;
-            margin-inline-start: 0;
-            margin-inline-end: 0;
+            @include margin_killer;
             align-self: center;
             h3 {
                 text-shadow: 1px 1px 2px gray;
@@ -167,6 +147,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
         @media (min-width: 1100px) { 
                 width: 25%;
@@ -175,16 +156,13 @@ main {
         }
     }
     #contactUs {
-        background: url("/img/brick.jpg");
-        background-position: center;
-        background-size: 100%;
-        background-repeat: repeat;
+        background: $contact_bg;
+        @include background_image;
         display: flex;
         width: 100%;
         padding: 1em;
         img {
-            border: 1px solid black;
-            box-shadow: 2px 2px 4px black;
+            @include image_border;
         }
     }
 }
