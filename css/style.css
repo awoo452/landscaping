@@ -1,3 +1,5 @@
+/*Fonts*/
+/*Background Images*/
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -14,7 +16,6 @@ nav {
   height: fit-content;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: 'Baloo Tammudu 2', cursive;
 }
 
 nav ul {
@@ -30,10 +31,16 @@ nav ul li {
   padding: .5em;
 }
 
+nav ul li a {
+  text-decoration: none;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
 nav #logo {
   background: url("/img/logo.png");
   background-position: center;
   background-size: 100%;
+  background-repeat: repeat;
   background-repeat: no-repeat;
   justify-self: center;
   align-self: center;
@@ -52,7 +59,7 @@ main {
 main h1, main h2, main h3, main h4, main h5, main h6, main p, main a {
   color: #eeeeee;
   text-align: center;
-  font-family: 'Baloo Tammudu 2', cursive;
+  font-family: "Baloo Tammudu 2", cursive;
   padding: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -98,7 +105,7 @@ main .header {
 }
 
 main .header h1 {
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   font-size: 3em;
   text-shadow: 2px 2px #000000;
 }
@@ -107,20 +114,12 @@ main #topHeader {
   border-top: 0;
 }
 
-main #getStarted {
+main #landing {
   background: url("/img/plant.jpeg");
   background-position: center;
   background-size: 100%;
   background-repeat: repeat;
-  display: flex;
-  flex-direction: column;
   padding: 5em;
-}
-
-main #getStarted button {
-  width: fit-content;
-  align-self: center;
-  padding: 1em;
 }
 
 main #landscaping {
@@ -132,8 +131,9 @@ main #landscaping {
 }
 
 main #landscaping img {
-  border-radius: 10px;
   margin: 1em;
+  border-radius: 10px;
+  border: 1px solid black;
   box-shadow: 2px 2px 4px black;
 }
 
@@ -145,8 +145,9 @@ main #junk {
 }
 
 main #junk img {
-  border-radius: 10px;
   margin: 1em;
+  border-radius: 10px;
+  border: 1px solid black;
   box-shadow: 2px 2px 4px black;
 }
 
@@ -160,9 +161,10 @@ main #testamonials {
 main #testamonials .testamonial {
   width: 75%;
   background-color: #eeeeee;
-  border-radius: 10px;
   margin: 1em;
   padding: .5em;
+  border-radius: 10px;
+  border: 1px solid black;
   box-shadow: 2px 2px 4px black;
   display: flex;
   justify-content: space-around;
@@ -180,10 +182,10 @@ main #testamonials .testamonial img {
 }
 
 main #testamonials .testamonial .testamonialText {
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   align-self: center;
 }
 
@@ -195,6 +197,7 @@ main #testamonials .testamonial .testamonialPhotos {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 1100px) {
@@ -214,6 +217,7 @@ main #contactUs {
 }
 
 main #contactUs img {
+  border-radius: 10px;
   border: 1px solid black;
   box-shadow: 2px 2px 4px black;
 }
