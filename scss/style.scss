@@ -70,7 +70,7 @@ main {
             max-width: 75%;
             height: auto;
         }
-        @media (min-width: 700px) { 
+        @media screen and (min-width: 700px) { 
             img {
                 max-width: 25%;
             }
@@ -102,7 +102,16 @@ main {
     #landscaping {
         background: $landscaping_bg;
         @include background_image;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
+        img {
+            margin: 1em;
+            @include image_border;
+        }
+    }
+    #pw {
+        background: $pw_bg;
+        @include background_image;
+        border-bottom: 2px solid white;
         img {
             margin: 1em;
             @include image_border;
@@ -163,6 +172,7 @@ main {
         padding: 1em;
         img {
             @include image_border;
+            max-width: 50%!important;
         }
     }
 }

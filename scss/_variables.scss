@@ -8,12 +8,13 @@ $main_font_family_2: 'Courgette', cursive;
 
 $landscaping_bg: url("/img/grass.jpeg");
 $junk_bg: url("/img/metal.jpeg");
+$pw_bg: url('/img/concrete.jpeg');
 $testamonials_bg: url("/img/sky.jpeg");
 $contact_bg: url("/img/brick.jpg");
 
 @mixin image_border {
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid white;
     box-shadow: 2px 2px 4px black;
 }
 

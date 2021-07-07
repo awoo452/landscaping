@@ -87,7 +87,7 @@ main article img {
   height: auto;
 }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   main article img {
     max-width: 25%;
   }
@@ -127,13 +127,28 @@ main #landscaping {
   background-position: center;
   background-size: 100%;
   background-repeat: repeat;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
 }
 
 main #landscaping img {
   margin: 1em;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 2px solid white;
+  box-shadow: 2px 2px 4px black;
+}
+
+main #pw {
+  background: url("/img/concrete.jpeg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: repeat;
+  border-bottom: 2px solid white;
+}
+
+main #pw img {
+  margin: 1em;
+  border-radius: 10px;
+  border: 2px solid white;
   box-shadow: 2px 2px 4px black;
 }
 
@@ -147,7 +162,7 @@ main #junk {
 main #junk img {
   margin: 1em;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 2px solid white;
   box-shadow: 2px 2px 4px black;
 }
 
@@ -164,7 +179,7 @@ main #testamonials .testamonial {
   margin: 1em;
   padding: .5em;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 2px solid white;
   box-shadow: 2px 2px 4px black;
   display: flex;
   justify-content: space-around;
@@ -218,6 +233,7 @@ main #contactUs {
 
 main #contactUs img {
   border-radius: 10px;
-  border: 1px solid black;
+  border: 2px solid white;
   box-shadow: 2px 2px 4px black;
+  max-width: 50% !important;
 }
