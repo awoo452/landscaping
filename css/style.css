@@ -201,6 +201,7 @@ main #testamonials .testamonial .testamonialText {
   margin-inline-end: 0;
   margin-block-start: 0;
   margin-block-end: 0;
+  padding: .5em;
   align-self: center;
 }
 

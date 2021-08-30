@@ -147,6 +147,7 @@ main {
             }
         .testamonialText {
             @include margin_killer;
+            padding: .5em;
             align-self: center;
             h3 {
                 text-shadow: 1px 1px 2px gray;
